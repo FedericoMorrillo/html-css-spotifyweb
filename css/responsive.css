@@ -8,14 +8,26 @@
         min-width: 200px;
     }
     .nav img{
-        max-width: 70%;
+        max-width: 60%;
     }
      .nav-btn img{
-        max-width: 18%;
+        max-width: 100%;
     }
     .nav-btn{
-        text-align: start;
+        width:30px;
     }
+    .info{
+        padding-left: .3125rem;
+        font-size: 0.875rem;
+    }
+    .info2{
+        font-size: .75rem ;
+    }
+    .download{
+        border-bottom: 1px solid #d2d2d2;
+        
+    }
+
    .navbox{
     padding: 0;
     border-left: .1875rem solid transparent;

@@ -34,20 +34,24 @@
                 <!--/logo-->
                 <!--menù-->
                 <div>
-                    <div class="space-bottom no-hover navbox select">
-                        <button class="nav-btn">
-                            <img src="img/home.svg" alt="navbox">
-                        </button>
+                    <div class="space-bottom no-hover navbox select flex">
+                            <button class="nav-btn">
+                                <img src="img/home.svg" alt="home">
+                            </button>
+                            <div class="info xs-major">Home</div>
+                            
                     </div>
-                    <div class="space-bottom no-hover navbox">
+                    <div class="space-bottom no-hover navbox flex">
                         <button class="nav-btn">
                             <img src="img/search.svg" alt="seach">
                         </button>
+                        <div class="info xs-major">Seach</div>
                     </div>
-                    <div class="no-hover navbox">
+                    <div class="no-hover navbox flex">
                         <button class="nav-btn">
                             <img src="img/libreria.svg" alt="librery">
                         </button>
+                        <div class="info xs-major"> La tua libreria</div>
                     </div>
                 </div>
                 <!--/menù-->
@@ -56,14 +60,15 @@
             <!--menù basso-->
             <div>
                 <!--tasto download-->
-                <div class=" download space-bottom no-hover navbox">
+                <div class=" download space-bottom no-hover navbox flex">
                     <button class="nav-btn">
                         <img src="img/download.svg" alt="download">
                     </button>
+                    <div class="info2 xs-major">installa app</div>
                 </div>
                 <!--/tasto download-->
                 <!--profilo-->
-                <div class=" space-bottom user navbox">
+                <div class=" space-bottom user navbox flex">
                     <button class="nav-btn">
                         <img src="img/profile.svg" alt="profile">
                     </button>
@@ -102,7 +107,14 @@
             </div>
         </div>
         <div class="box">
-            TEST
+            <div class="icon-2">
+                <i class="fa-solid fa-shuffle fa-sm" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-backward fa-sm" style="color: #ffffff;"></i>
+                <span class="play"><i class="fa-regular fa-circle-play fa-lg" style="color: #ffffff;"></i></span>
+                <i class="fa-solid fa-forward fa-sm" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-arrow-rotate-right fa-sm" style="color: #ffffff;"></i>
+            </div>
+            <div class="font-small">0:25 <span class="tempo-brano"><input type="range"></span>4:35</div>
         </div>
         <div class="box flex">
             <div class="icon-3">
@@ -110,7 +122,7 @@
                 <i class="fa-solid fa-desktop fa-sm" style="color: #ffffff;"></i>
                 <i class="fa-solid fa-volume-high fa-sm" style="color: #ffffff;"></i>
             </div>
-            <input type="range">
+            <div class="barra-volume"><input type="range"></div>
         </div>
     </footer>
 </body>
