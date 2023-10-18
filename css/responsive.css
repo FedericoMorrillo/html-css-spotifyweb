@@ -1,0 +1,37 @@
+/*responsive*/
+.xs-major{
+    display: none;
+}
+/*sm*/
+@media screen and (min-width: 577px){
+    .nav{
+        min-width: 200px;
+    }
+    .nav img{
+        max-width: 70%;
+    }
+     .nav-btn img{
+        max-width: 18%;
+    }
+    .nav-btn{
+        text-align: start;
+    }
+   .navbox{
+    padding: 0;
+    border-left: .1875rem solid transparent;
+   }
+   .select{
+    border-left: .1875rem solid yellow;
+   }
+.only-xs{
+    display: none;
+ }   
+    .xs-major{
+        display: inline-block;
+    }
+
+
+}
+
+/*tablet*/
+/*responsive*/

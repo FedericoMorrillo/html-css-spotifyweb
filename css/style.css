@@ -1,3 +1,119 @@
 @import "reset.css";
 @import "font.css";
+@import "utils.css";
+@import "responsive.css";
 
+
+main {
+    background-color: #141922;
+}
+
+/*menù superiore*/
+.up-bar {
+    width: 100%;
+    background-color: hsla(222, 38%, 5%, 0.5);
+    height: 3.75rem;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: .9375rem;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    right: 0;
+}
+
+.up-bar button {
+    border: 2px solid white;
+    color: white;
+    border-radius: 25px;
+    padding: .625rem 1.25rem;
+    max-width: 200px;
+    font-size: .625rem;
+}
+
+/*menù superiore*/
+/*menu laterale*/
+.nav {
+    background-color: black;
+    height: 100vh;
+    width: 2.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 97;
+    left: 0;
+    top: 0;
+}
+.navbox{
+    padding: .3125rem 0.625rem;
+}
+
+.nav img {
+    width: 100%;
+}
+
+.download img {
+    width: 50%;
+}
+.user {
+    padding-bottom: 3.75rem;
+}
+.user img {
+    background-color: #808080;
+    border-radius: 100%;
+}
+
+/*menù laterale*/
+/*menù basso*/
+footer {
+    height: 3.75rem;
+    width: 100%;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    justify-content: space-between;
+    padding: .625rem;
+}
+
+footer img {
+    width: 1.875rem;
+}
+
+.info-brano {
+    padding-left: .625rem;
+}
+
+.info-brano h5 {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+footer .subtitle {
+    font-size: .625rem;
+}
+
+.icon-1 {
+    padding-left: .625rem;
+}
+
+.icon-3 i {
+    padding-right: .3125rem;
+    font-size: .875rem;
+}
+
+.box input {
+    max-width: 4rem;
+    -webkit-appearance: none;
+    height: .125rem;
+    padding-right: .625rem;
+}
+
+.box {
+    justify-content: flex-end;
+}
+
+/*menù basso*/

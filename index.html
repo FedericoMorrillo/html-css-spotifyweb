@@ -1,14 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--/font awesome-->
+    <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--/font-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
     <link rel="stylesheet" href="css/style.css">
+    <!--/css-->
     <title>Spotify Web</title>
 </head>
-<body>   
+
+<body>
+    <main>
+        <!--menù laterale-->
+        <div class="nav flex">
+            <!--menù alto-->
+            <div>
+                <!--logo-->
+                <div class="logo space-bottom navbox">
+                    <img class="only-xs" src="img/logo-small.svg" alt="logo">
+                    <img class="xs-major" src="img/logo.svg" alt="logo">
+                </div>
+                <!--/logo-->
+                <!--menù-->
+                <div>
+                    <div class="space-bottom no-hover navbox select">
+                        <button class="nav-btn">
+                            <img src="img/home.svg" alt="navbox">
+                        </button>
+                    </div>
+                    <div class="space-bottom no-hover navbox">
+                        <button class="nav-btn">
+                            <img src="img/search.svg" alt="seach">
+                        </button>
+                    </div>
+                    <div class="no-hover navbox">
+                        <button class="nav-btn">
+                            <img src="img/libreria.svg" alt="librery">
+                        </button>
+                    </div>
+                </div>
+                <!--/menù-->
+            </div>
+            <!--/menù alto-->
+            <!--menù basso-->
+            <div>
+                <!--tasto download-->
+                <div class=" download space-bottom no-hover navbox">
+                    <button class="nav-btn">
+                        <img src="img/download.svg" alt="download">
+                    </button>
+                </div>
+                <!--/tasto download-->
+                <!--profilo-->
+                <div class=" space-bottom user navbox">
+                    <button class="nav-btn">
+                        <img src="img/profile.svg" alt="profile">
+                    </button>
+                </div>
+                <!--/profilo-->
+            </div>
+            <!--/menù basso-->
+        </div>
+        <!--/menù laterale-->
+
+        <!--menù superiore-->
+        <div class="up-bar flex">
+            <button>
+                EFFETTUA L'UPGRADE
+            </button>
+        </div>
+        <!--/menù superiore-->
+    </main>
+    <footer class="flex">
+        <div class="box flex">
+            <div>
+                <img src="img/sinister.jpeg" alt="sinister">
+            </div>
+            <div class="info-brano">
+                <h5>Sinister</h5>
+                <div class="subtitle">Brano</div>
+                <div class="subtitle">Nome</div>
+            </div>
+            <div class="icon-1">
+                <div>
+                    <i class="fa-regular fa-heart fa-sm" style="color: #828282;"></i>
+                </div>
+                <div>
+                    <i class="fa-regular fa-folder fa-sm" style="color: #828282;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            TEST
+        </div>
+        <div class="box flex">
+            <div class="icon-3">
+                <i class="fa-solid fa-list fa-sm" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-desktop fa-sm" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-volume-high fa-sm" style="color: #ffffff;"></i>
+            </div>
+            <input type="range">
+        </div>
+    </footer>
 </body>
+
 </html>

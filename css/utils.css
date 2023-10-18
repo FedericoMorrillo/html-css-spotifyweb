@@ -1,0 +1,25 @@
+/*common*/
+.flex{
+    display: flex;
+    align-items: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.space-bottom{
+    padding-bottom: .625rem ;
+}
+.no-hover{
+    color: #d2d2d2;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+.t-center{
+    text-align: center;
+}
+.subtitle{
+    color:  #848484;
+}
+/*common*/
