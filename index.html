@@ -21,7 +21,6 @@
 </head>
 
 <body>
-    <main>
         <!--menù laterale-->
         <div class="nav flex">
             <!--menù alto-->
@@ -33,45 +32,120 @@
                 </div>
                 <!--/logo-->
                 <!--menù-->
-                <div>
-                    <div class="space-bottom no-hover navbox select flex">
-                            <button class="nav-btn">
-                                <img src="img/home.svg" alt="home">
-                            </button>
-                            <div class="info xs-major">Home</div>
-                            
-                    </div>
-                    <div class="space-bottom no-hover navbox flex">
-                        <button class="nav-btn">
-                            <img src="img/search.svg" alt="seach">
-                        </button>
-                        <div class="info xs-major">Seach</div>
-                    </div>
-                    <div class="no-hover navbox flex">
-                        <button class="nav-btn">
-                            <img src="img/libreria.svg" alt="librery">
-                        </button>
-                        <div class="info xs-major"> La tua libreria</div>
-                    </div>
+                <div class=" navbox space-bottom select">
+                    <div class="  no-hover nav-icon flex">
+                        <img src="img/home.svg" alt="home">
+                        <div class="info xs-major">
+                            Home
+                        </div>
+                    </div>         
                 </div>
+                <div class="space-bottom  navbox ">
+                    <div class="nav-icon no-hover flex">
+                        <img src="img/search.svg" alt="seach">
+                        <div class="info xs-major">
+                            Seach
+                        </div>  
+                    </div>     
+                </div>
+                <div class="space-bottom  navbox">
+                        <div class="nav-icon no-hover flex">
+                            <img src="img/libreria.svg" alt="librery">
+                            <div class="info xs-major">
+                                La tua libreria
+                            </div>
+                        </div>
+                </div>
+                    <div class="xs-major">
+                        <div class="navbox">
+                            <div>
+                                <h4>PLAYLIST</h4>
+                            </div>
+                            <div>
+                                <div class="flex space-bottom">
+                                    <button class="add-playlist ">
+                                        <div>
+                                        <i class="fa-solid fa-plus fa-lg" style="color: #000000;"></i>
+                                        </div>    
+                                    </button>
+                                    <div>Crea Playlist</div>
+                                </div>
+                                <div class="list">
+                                    <div class="space-bottom">
+                                        Nome Playlist
+                                    </div>
+                                    <div class="space-bottom">
+                                        Nome Playlist
+                                    </div>
+                                    <div class="space-bottom">
+                                        Nome Playlist
+                                    </div>
+                                    <div class="space-bottom">
+                                        Nome Playlist
+                                    </div>
+                                    <div class="space-bottom">
+                                        Nome Playlist
+                                    </div>
+                                    <div class="space-bottom">
+                                        Nome Playlist
+                                    </div>
+                                    <div class="space-bottom">
+                                        Nome Playlist
+                                    </div>
+                                    <div class="space-bottom">
+                                        Nome Playlist
+                                    </div>
+                                    <div class="space-bottom">
+                                        Nome Playlist
+                                    </div>
+                                    <div class="space-bottom">
+                                        Nome Playlist
+                                    </div>
+                                    <div class="space-bottom">
+                                        Nome Playlist
+                                    </div>
+                                    <div class="space-bottom">
+                                        Nome Playlist
+                                    </div>
+                                    <div class="space-bottom">
+                                        Nome Playlist
+                                    </div>
+                                    <div class="space-bottom">
+                                        Nome Playlist
+                                    </div>
+                                    <div class="space-bottom">
+                                        Nome Playlist
+                                    </div>
+                                </div> 
+                                
+                                
+                            </div>    
+                        </div>
+                        
+                    </div>
                 <!--/menù-->
             </div>
             <!--/menù alto-->
             <!--menù basso-->
-            <div>
+            <div class="nav-bottom">
                 <!--tasto download-->
                 <div class=" download space-bottom no-hover navbox flex">
-                    <button class="nav-btn">
+                    <div class="nav-icon">
                         <img src="img/download.svg" alt="download">
-                    </button>
-                    <div class="info2 xs-major">installa app</div>
+                    </div>
+                    <div class="info2 xs-major">
+                        installa app
+                    </div>
                 </div>
                 <!--/tasto download-->
                 <!--profilo-->
                 <div class=" space-bottom user navbox flex">
-                    <button class="nav-btn">
+                    <div class="nav-icon">
                         <img src="img/profile.svg" alt="profile">
-                    </button>
+                    </div>
+                    <div class="nickname xs-major">
+                        <strong>John Doe</strong>
+                    </div>
                 </div>
                 <!--/profilo-->
             </div>
@@ -86,7 +160,7 @@
             </button>
         </div>
         <!--/menù superiore-->
-    </main>
+        <!--menù inferiore-->
     <footer class="flex">
         <div class="box flex">
             <div>
@@ -99,32 +173,33 @@
             </div>
             <div class="icon-1">
                 <div>
-                    <i class="fa-regular fa-heart fa-sm" style="color: #828282;"></i>
+                    <i class="fa-regular fa-heart fa-xs" style="color: #828282;"></i>
                 </div>
                 <div>
-                    <i class="fa-regular fa-folder fa-sm" style="color: #828282;"></i>
+                    <i class="fa-regular fa-folder fa-xs" style="color: #828282;"></i>
                 </div>
             </div>
         </div>
         <div class="box">
             <div class="icon-2">
-                <i class="fa-solid fa-shuffle fa-sm" style="color: #ffffff;"></i>
-                <i class="fa-solid fa-backward fa-sm" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-shuffle fa-xs" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-backward fa-xs" style="color: #ffffff;"></i>
                 <span class="play"><i class="fa-regular fa-circle-play fa-lg" style="color: #ffffff;"></i></span>
-                <i class="fa-solid fa-forward fa-sm" style="color: #ffffff;"></i>
-                <i class="fa-solid fa-arrow-rotate-right fa-sm" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-forward fa-xs" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-arrow-rotate-right fa-xs" style="color: #ffffff;"></i>
             </div>
             <div class="font-small">0:25 <span class="tempo-brano"><input type="range"></span>4:35</div>
         </div>
         <div class="box flex">
             <div class="icon-3">
-                <i class="fa-solid fa-list fa-sm" style="color: #ffffff;"></i>
-                <i class="fa-solid fa-desktop fa-sm" style="color: #ffffff;"></i>
-                <i class="fa-solid fa-volume-high fa-sm" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-list fa-xs" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-desktop fa-xs" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-volume-high fa-xs" style="color: #ffffff;"></i>
             </div>
             <div class="barra-volume"><input type="range"></div>
         </div>
     </footer>
+    <!--/menù inferiore-->
 </body>
 
 </html>

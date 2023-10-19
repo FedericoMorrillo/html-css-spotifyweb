@@ -1,44 +1,56 @@
 /*responsive*/
-.xs-major{
+.xs-major {
     display: none;
 }
+
 /*sm*/
-@media screen and (min-width: 577px){
-    .nav{
+@media screen and (min-width: 577px) {
+    .nav {
         min-width: 200px;
     }
-    .nav img{
+
+    .nav img {
         max-width: 60%;
     }
-     .nav-btn img{
+
+    .nav-icon img {
         max-width: 100%;
     }
-    .nav-btn{
-        width:30px;
-    }
-    .info{
-        padding-left: .3125rem;
-        font-size: 0.875rem;
-    }
-    .info2{
-        font-size: .75rem ;
-    }
-    .download{
-        border-bottom: 1px solid #d2d2d2;
-        
+
+    .nav-icon {
+        width: 30px;
     }
 
-   .navbox{
-    padding: 0;
-    border-left: .1875rem solid transparent;
-   }
-   .select{
-    border-left: .1875rem solid yellow;
-   }
-.only-xs{
-    display: none;
- }   
-    .xs-major{
+    .download {
+        width: 100%;
+        border-bottom: 1px solid #d2d2d2;
+        margin-left: 1.25rem;
+        text-align: center;
+    }
+
+    .download .nav-icon {
+        padding-top: 5px;
+    }
+
+    .navbox {
+        padding: 0;
+        border-left: .1875rem solid transparent;
+    }
+.nav-bottom{
+    width: 80% !important;
+}
+.user img{
+    width: 2.5rem !important;
+}
+    .select {
+        border-left: .1875rem solid yellow;
+    }
+
+    .only-xs {
+        display: none;
+    }
+
+    .xs-major {
         display: inline-block;
     }
 

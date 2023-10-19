@@ -3,9 +3,16 @@
 @import "utils.css";
 @import "responsive.css";
 
+body{
+    height: 100vh;
+}
 
 main {
     background-color: #141922;
+}
+
+.giu{
+margin-top: auto;
 }
 
 /*menù superiore*/
@@ -18,6 +25,7 @@ main {
     padding-right: .9375rem;
     top: 0;
     right: 0;
+    position: fixed;
 }
 
 .up-bar button {
@@ -35,8 +43,9 @@ main {
     background-color: black;
     height: 100vh;
     width: 2.5rem;
-    flex-direction: column;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
     position: fixed;
     z-index: 97;
     left: 0;
@@ -49,16 +58,48 @@ main {
 .nav img {
     width: 100%;
 }
+.info{
+    padding-left: .3125rem;
+    font-size: 0.875rem;
 
-.download img {
+}
+.info2{
+    font-size: .75rem ;
+    padding-left: .3125rem;
+}
+.navbox h4 {
+    margin-bottom: 1.25rem;
+}
+.add-playlist {
+    background-color:#a3a3a3 ;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: .625rem;
+}
+.add-playlist i {
     width: 50%;
+}
+.list{
+    height: 12.5rem;
+    overflow-y: scroll;
+}
+.nav-bottom{
+    width: 2.5rem;
+}
+.download .nav-icon {
+    width: .9375rem;
 }
 .user {
     padding-bottom: 3.75rem;
 }
 .user img {
+    width: 1.25rem;
     background-color: #808080;
     border-radius: 100%;
+}
+.nickname{
+    padding-left: .625rem;
+    font-size: .875rem;
 }
 
 /*menù laterale*/
@@ -74,6 +115,7 @@ footer {
     z-index: 99;
     justify-content: space-between;
     padding: .625rem;
+    overflow-y: hidden;
 }
 
 footer img {
