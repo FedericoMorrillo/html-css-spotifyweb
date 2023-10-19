@@ -3,178 +3,249 @@
 @import "utils.css";
 @import "responsive.css";
 
-body{
+/*body*/
+body {
     height: 100vh;
 }
 
+/*body*/
+
+/*main*/
 main {
     background-color: #141922;
+ flex-grow: 1;
+ align-self: stretch;
+ overflow-y: scroll;
 }
 
-.giu{
-margin-top: auto;
-}
 
+
+.music-nav{
+    font-size: .6875rem;
+}
+.music-nav li{
+    padding: .3125rem 0;
+    margin: .625rem 1rem 0 1rem;
+    
+}
+ul{
+    justify-content: center;
+}
+li{
+    list-style: none;
+border-bottom: 2px solid transparent;
+}
+.select-b{
+    border-bottom: 2px solid yellow;
+}
+.int-album{
+    margin: 20px;
+}
+.album-box{
+    margin-left: 20px;
+    gap: 20px;
+}
+.album{
+    width: 200px;
+}
+.album img{
+    width: 100%;
+    display: block;
+}
+.title{
+    text-align: center;
+    padding: 10px;
+}
+.album-box .subtitle{
+font-size: .75rem;
+}
+/*main*/
 /*menù superiore*/
 .up-bar {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 3.75rem;
+    height: 90px;
     align-items: center;
     justify-content: flex-end;
     padding-right: .9375rem;
-    top: 0;
-    right: 0;
-    position: fixed;
-}
-
-.up-bar button {
-    border: 2px solid white;
-    color: white;
-    border-radius: 25px;
-    padding: .625rem 1.25rem;
-    max-width: 200px;
-    font-size: .625rem;
-}
-
-/*menù superiore*/
-/*menu laterale*/
-.nav {
-    background-color: black;
-    height: 100vh;
-    width: 2.5rem;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: flex-start;
-    position: fixed;
-    z-index: 97;
-    left: 0;
-    top: 0;
-}
-.navbox{
-    padding: .3125rem 0.625rem;
-}
-
-.nav img {
-    width: 100%;
-}
-.info{
-    padding-left: .3125rem;
-    font-size: 0.875rem;
 
 }
-.info2{
-    font-size: .75rem ;
-    padding-left: .3125rem;
-}
-.navbox h4 {
-    margin-bottom: 1.25rem;
-}
-.add-playlist {
-    background-color:#a3a3a3 ;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-right: .625rem;
-}
-.add-playlist i {
-    width: 50%;
-}
-.list{
-    height: 12.5rem;
-    overflow-y: scroll;
-}
-.nav-bottom{
-    width: 2.5rem;
-}
-.download .nav-icon {
-    width: .9375rem;
-}
-.user {
-    padding-bottom: 3.75rem;
-}
-.user img {
-    width: 1.25rem;
-    background-color: #808080;
-    border-radius: 100%;
-}
-.nickname{
-    padding-left: .625rem;
-    font-size: .875rem;
-}
 
-/*menù laterale*/
-/*menù basso*/
-footer {
-    height: 3.75rem;
-    width: 100%;
-    background-color: #282828;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    justify-content: space-between;
-    padding: .625rem;
-    overflow-y: hidden;
-}
+    .up-bar button{
+        border: 2px solid white;
+        color: white;
+        border-radius: 25px;
+        padding: .625rem 1.25rem;
+        max-width: 200px;
+        font-size: .625rem;
+    }
 
-footer img {
-    width: 1.5625rem;
-}
+    /*menù superiore*/
+    /*menu laterale*/
+    .nav {
+        background-color: black;
+        height: 100vh;
+        width: 50px;
+        padding: .3125rem .3125rem 0 .3125rem;
+        flex-direction: column;
+        align-items: center;
+            height: calc(100vh - 90px);
+    }
 
-.info-brano {
-    padding-left: .625rem;
-}
+    .logo {
+        width: 70%;
+        padding-bottom: .3125rem;
+    }
 
-.info-brano h5 {
-    color: white;
-    padding: 0;
-    margin: 0;
-}
+    .nav-icon {
+        width: 30px;
+        padding-bottom: .3125rem;
+    }
 
-footer .subtitle {
-    font-size: .625rem;
-}
+    .download-icon img {
+        width: 20px;
+        padding-left: 5px;
+    }
 
-.icon-1 {
-    padding-left: .625rem;
-    flex-grow: 1;
-}
-.icon-2{
-    padding-bottom: .625rem;
-    text-align: center;
-    flex-grow: 2;
-}
-.icon-2 i{
-    padding: .3125rem
-}
-.play{
-    padding: 0 .625rem;
-}
-.font-small{
-    font-size: .5rem;
-    height: 2px;
-}
-.tempo-brano{
-    display: inline-block;
-    padding-bottom: .3125rem;
-}
-.tempo-brano input{
-    width: 100%;
-    height: 2px;
-}
-.icon-3 i {
-    padding-right: .3125rem;
-    font-size: .875rem;
-}
-.barra-volume input{
-height: 2px;
-display: flex;
-align-self: center;
-max-width: 6.25rem;
-}
-.box {
-    justify-content: flex-end;
-}
+    .profile .nav-icon img {
+        width: 30px;
+    }
 
-/*menù basso*/
+    .info {
+        padding-left: .3125rem;
+        font-size: 0.875rem;
+
+    }
+
+    .info-profile {
+        font-size: .75rem;
+        padding-left: .3125rem;
+    }
+
+    .menu h4 {
+        margin-bottom: 1.25rem;
+    }
+
+    .add-playlist {
+        background-color: #a3a3a3;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: .625rem;
+        overflow-y: hidden;
+    }
+
+    .add-playlist i {
+        width: 50%;
+    }
+
+    .list {
+        height: 12.5rem;
+        overflow-y: auto;
+    }
+
+    .profile {
+        margin-top: auto;
+    }
+
+    .download .nav-icon {
+        width: .9375rem;
+    }
+
+    .user img {
+        width: 1.25rem;
+        background-color: #808080;
+        border-radius: 100%;
+    }
+
+    .nickname {
+        padding-left: 1.25rem;
+        font-size: .875rem;
+    }
+
+    /*menù laterale*/
+
+    /*menù basso*/
+    footer {
+        height: 90px;
+        background-color: #282828;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        justify-content: space-between;
+        padding: .625rem .3125rem;
+    }
+
+    footer img {
+        width: 1.5625rem;
+    }
+
+    .info-brano {
+        padding-left: .625rem;
+    }
+
+    .info-brano h5 {
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer .subtitle {
+        font-size: .625rem;
+    }
+
+    .icon-1 {
+        padding-left: .625rem;
+        font-size: 12px;
+    }
+
+    .icon-2 {
+        padding-bottom: .625rem;
+        text-align: center;
+        flex-grow: 2;
+        font-size: 14px;
+    }
+
+    .icon-2 i {
+        padding: .3125rem;
+        font-size: 14px;
+    }
+
+    .play i {
+        padding: 0 .625rem;
+        font-size: 25px;
+    }
+
+    .font-small {
+        font-size: .5rem;
+        height: 2px;
+    }
+
+    .tempo-brano {
+        display: inline-block;
+        padding-bottom: .3125rem;
+    }
+
+    .tempo-brano input {
+        width: 100%;
+        height: 2px;
+    }
+
+    .icon-3 i {
+        padding-right: .3125rem;
+        font-size: .875rem;
+    }
+
+    .barra-volume input {
+        height: 2px;
+        display: flex;
+        align-self: center;
+        max-width: 6.25rem;
+    }
+
+    .box {
+        justify-content: flex-end;
+    }
+
+    /*menù basso*/

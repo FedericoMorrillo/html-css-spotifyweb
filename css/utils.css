@@ -1,5 +1,4 @@
 /*common*/
-
 .flex{
     display: flex;
     align-items: center;
@@ -23,4 +22,10 @@ button{
 .subtitle{
     color:  #848484;
 }
+.xs-major{
+    display:none;
+}
+.giu{
+    margin-top: auto;
+    }
 /*common*/

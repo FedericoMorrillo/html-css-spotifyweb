@@ -22,146 +22,179 @@
 
 <body>
         <!--menù laterale-->
-        <div class="nav flex">
-            <!--menù alto-->
-            <div>
+        <div class="main-window flex">
+            <div class="nav flex">
+                <!--menù alto-->
                 <!--logo-->
-                <div class="logo space-bottom navbox">
+                <div class=" logo">
                     <img class="only-xs" src="img/logo-small.svg" alt="logo">
                     <img class="xs-major" src="img/logo.svg" alt="logo">
                 </div>
                 <!--/logo-->
                 <!--menù-->
-                <div class=" navbox space-bottom select">
-                    <div class="  no-hover nav-icon flex">
-                        <img src="img/home.svg" alt="home">
-                        <div class="info xs-major">
-                            Home
-                        </div>
-                    </div>         
-                </div>
-                <div class="space-bottom  navbox ">
-                    <div class="nav-icon no-hover flex">
-                        <img src="img/search.svg" alt="seach">
-                        <div class="info xs-major">
-                            Seach
-                        </div>  
-                    </div>     
-                </div>
-                <div class="space-bottom  navbox">
+                <div class=" menu">
+                    <div class="home select">
+                        <button class="  no-hover nav-icon flex">
+                            <img src="img/home.svg" alt="home">
+                            <div class="info xs-major">
+                                Home
+                            </div>
+                        </button>
+                    </div>
+                    <div class="seach ">
+                        <button class="nav-icon no-hover flex">
+                            <img src="img/search.svg" alt="seach">
+                            <div class="info xs-major">
+                                Seach
+                            </div>
+                        </button>
+                    </div>
+                    <div class="library">
                         <div class="nav-icon no-hover flex">
                             <img src="img/libreria.svg" alt="librery">
                             <div class="info xs-major">
                                 La tua libreria
                             </div>
                         </div>
-                </div>
-                    <div class="xs-major">
-                        <div class="navbox">
-                            <div>
-                                <h4>PLAYLIST</h4>
-                            </div>
-                            <div>
-                                <div class="flex space-bottom">
-                                    <button class="add-playlist ">
-                                        <div>
-                                        <i class="fa-solid fa-plus fa-lg" style="color: #000000;"></i>
-                                        </div>    
-                                    </button>
-                                    <div>Crea Playlist</div>
-                                </div>
-                                <div class="list">
-                                    <div class="space-bottom">
-                                        Nome Playlist
-                                    </div>
-                                    <div class="space-bottom">
-                                        Nome Playlist
-                                    </div>
-                                    <div class="space-bottom">
-                                        Nome Playlist
-                                    </div>
-                                    <div class="space-bottom">
-                                        Nome Playlist
-                                    </div>
-                                    <div class="space-bottom">
-                                        Nome Playlist
-                                    </div>
-                                    <div class="space-bottom">
-                                        Nome Playlist
-                                    </div>
-                                    <div class="space-bottom">
-                                        Nome Playlist
-                                    </div>
-                                    <div class="space-bottom">
-                                        Nome Playlist
-                                    </div>
-                                    <div class="space-bottom">
-                                        Nome Playlist
-                                    </div>
-                                    <div class="space-bottom">
-                                        Nome Playlist
-                                    </div>
-                                    <div class="space-bottom">
-                                        Nome Playlist
-                                    </div>
-                                    <div class="space-bottom">
-                                        Nome Playlist
-                                    </div>
-                                    <div class="space-bottom">
-                                        Nome Playlist
-                                    </div>
-                                    <div class="space-bottom">
-                                        Nome Playlist
-                                    </div>
-                                    <div class="space-bottom">
-                                        Nome Playlist
-                                    </div>
-                                </div> 
-                                
-                                
-                            </div>    
+                    </div>
+                    <div class="xs-major playlist">
+                        <div>
+                            <h4>PLAYLIST</h4>
                         </div>
-                        
+                        <div>
+                            <div class="flex space-bottom">
+                                <button class="add-playlist ">
+                                    <div>
+                                        <i class="fa-solid fa-plus fa-lg" style="color: #000000;"></i>
+                                    </div>
+                                </button>
+                                <div>
+                                    Crea Playlist
+                                </div>
+                            </div>
+                            <ul class="list">
+                                <li class="space-bottom">
+                                    Nome Playlist
+                                </li>
+                                <li class="space-bottom">
+                                    Nome Playlist
+                                </li>
+                                <li class="space-bottom">
+                                    Nome Playlist
+                                </li>
+                                <li class="space-bottom">
+                                    Nome Playlist
+                                </li>
+                                <li class="space-bottom">
+                                    Nome Playlist
+                                </li>
+                                <li class="space-bottom">
+                                    Nome Playlist
+                                </li>
+                                <li class="space-bottom">
+                                    Nome Playlist
+                                </li>
+                                <li class="space-bottom">
+                                    Nome Playlist
+                                </li>
+                                <li class="space-bottom">
+                                    Nome Playlist
+                                </li>
+                                <li class="space-bottom">
+                                    Nome Playlist
+                                </li>
+                                <li class="space-bottom">
+                                    Nome Playlist
+                                </li>
+                                <li class="space-bottom">
+                                    Nome Playlist
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
                 <!--/menù-->
-            </div>
-            <!--/menù alto-->
-            <!--menù basso-->
-            <div class="nav-bottom">
-                <!--tasto download-->
-                <div class=" download space-bottom no-hover navbox flex">
-                    <div class="nav-icon">
-                        <img src="img/download.svg" alt="download">
+                <!--/menù alto-->
+                <!--menù basso-->
+                <div class=" profile">
+                    <!--tasto download-->
+                    <div class=" download space-bottom no-hover flex">
+                        <div class="download-icon">
+                            <img src="img/download.svg" alt="download">
+                        </div>
+                        <div class="info-profile xs-major">
+                            installa app
+                        </div>
                     </div>
-                    <div class="info2 xs-major">
-                        installa app
+                    <!--/tasto download-->
+                    <!--profilo-->
+                    <div class=" user flex">
+                        <div class="nav-icon">
+                            <img src="img/profile.svg" alt="profile">
+                        </div>
+                        <div class="nickname xs-major">
+                            <strong> John Doe</strong>
+                        </div>
                     </div>
+                    <!--/profilo-->
                 </div>
-                <!--/tasto download-->
-                <!--profilo-->
-                <div class=" space-bottom user navbox flex">
-                    <div class="nav-icon">
-                        <img src="img/profile.svg" alt="profile">
-                    </div>
-                    <div class="nickname xs-major">
-                        <strong>John Doe</strong>
-                    </div>
-                </div>
-                <!--/profilo-->
+                <!--/menù basso-->
             </div>
-            <!--/menù basso-->
-        </div>
-        <!--/menù laterale-->
+            <!--/menù laterale-->
+            <main>
+                <!--menù superiore-->
+                <div class="up-bar flex">
+                    <button>
+                        EFFETTUA L'UPGRADE
+                    </button>
+                </div>
+                <!--/menù superiore-->
+                <!--menu selezione musica-->
+                <div class="music-nav"> 
+                    <ul class="music-nav flex wrap">
+                        <li class="select-b">
+                            IN EVIDENZA   
+                        </li>
+                        <li>
+                            PODCAST
+                        </li>
+                        <li>
+                            CLASSIFICHE
+                        </li>
+                        <li>
+                            GENERI E MOOD
+                        </li>
+                        <li>NUOVE USCITE</li>
+                        <li>
+                            SCOPRI
+                        </li>
+                    </ul>
+                </div>
+                <!--/menu selezione musica-->
+                <!--album-->
+                <h3 class="int-album">Recently Played</h3>
+                <div class="album-box flex wrap">
+                    <div>
+                        <div class="album">
+                            <img src="img/metal_lifting.jpg" alt="metal">
+                        </div>
+                        <h5 class="title">Heavy Metal</h5>
+                        <div class="subtitle t-center">Subtitle</div>
+                    </div>
+                    <div>
+                        <div class="album">
+                            <img src="img/metal_lifting.jpg" alt="metal">
+                        </div>
+                        <h5 class="title">Heavy Metal</h5>
+                        <div class="subtitle t-center">Subtitle</div>
+                    </div>
 
-        <!--menù superiore-->
-        <div class="up-bar flex">
-            <button>
-                EFFETTUA L'UPGRADE
-            </button>
+                </div>
+                <!--album-->
+            </main>
         </div>
-        <!--/menù superiore-->
-        <!--menù inferiore-->
-    <footer class="flex">
+    <!--menù inferiore-->
+     <footer class="flex">
         <div class="box flex">
             <div>
                 <img src="img/sinister.jpeg" alt="sinister">
