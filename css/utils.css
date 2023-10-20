@@ -1,4 +1,8 @@
 /*common*/
+.font-sm{
+    font-size: 10px;
+    padding-top: 5px;
+}
 .flex{
     display: flex;
     align-items: center;
@@ -27,5 +31,8 @@ button{
 }
 .giu{
     margin-top: auto;
+    }
+    .flex{
+        flex-grow: 1;
     }
 /*common*/
