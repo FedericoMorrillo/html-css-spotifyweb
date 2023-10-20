@@ -7,7 +7,6 @@
 body {
     height: 100vh;
 }
-
 /*body*/
 
 /*main*/
@@ -20,17 +19,17 @@ main {
 }
 
 
+.music-nav{
+    margin: 0 auto;
+}
+.music-nav button{
 
-.music-nav {
-
-    font-size: .75rem;
-    gap: 20px;
-    padding-top: .625rem;
+    font-size: .6875rem;
 }
 
-.music-nav li {
-    max-width: calc(100% / 4 );
-    padding: .3125rem .3125rem;
+.music-nav li{
+    max-width: calc(100% / 4);
+    padding: 5px 15px;
 
 }
 
@@ -42,10 +41,14 @@ li {
     list-style: none;
     border-bottom: 2px solid transparent;
 }
-
-.select-b {
-    border-bottom: 2px solid yellow;
+.music-nav hr{
+height: 3px;
+border-color: yellow;
+    background-color: yellow;
+    width: 30px;
+    margin: 0 auto;
 }
+
 
 .int-album {
     margin: 20px;
@@ -55,8 +58,12 @@ li {
     width: calc(100% / 2 - 20px);
     margin: 0 10px 5px 10px;
 }
-.no-align{
+
+.no-align {
     align-items: normal;
+}
+.album{
+    position: relative;
 }
 .album img {
     width: 100%;
@@ -71,7 +78,6 @@ li {
 .album-box .subtitle {
     font-size: .75rem;
 }
-
 /*main*/
 .main-window {
     height: calc(100% - 90px);
@@ -84,8 +90,11 @@ li {
     height: 90px;
     align-items: center;
     justify-content: flex-end;
-    padding-right: .9375rem;
-
+    padding-right: 10px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 10;
 }
 
 .up-bar button {
@@ -95,8 +104,13 @@ li {
     padding: .625rem 1.25rem;
     max-width: 200px;
     font-size: .625rem;
+   
 }
-
+.hover-grow:hover{
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+}
 /*menù superiore*/
 /*menu laterale*/
 .nav {
@@ -146,9 +160,8 @@ li {
     background-color: #a3a3a3;
     width: 2.5rem;
     height: 2.5rem;
-    margin-right: .625rem;
+    margin-right: 5px;
 }
-
 .add-playlist i {
     width: 50%;
 }
@@ -156,6 +169,7 @@ li {
 .list {
     height: 12.5rem;
     overflow-y: auto;
+    padding-right: 10px;
 }
 
 .profile {
@@ -188,19 +202,19 @@ footer {
     left: 0;
     right: 0;
     z-index: 99;
-    justify-content: space-between;
-    padding: .625rem .3125rem;
+    padding: .625rem .3125rem 0 .3125rem;
 }
+
 
 footer img {
     width: 1.5625rem;
 }
 
 .info-brano {
-    padding-left: .625rem;
+    padding-left: .3125rem;
 }
 
-.info-brano h5 {
+.info-brano h6 {
     color: white;
     padding: 0;
     margin: 0;
@@ -211,14 +225,15 @@ footer .subtitle {
 }
 
 .icon-1 {
-    padding-left: .625rem;
-    font-size: 12px;
+    padding-left: .3125rem;
+    font-size: 14px;
 }
-
+.info-brano{
+    max-width: 70%;
+}
 .icon-2 {
     padding-bottom: .625rem;
-    text-align: center;
-    flex-grow: 2;
+    flex-grow: 1;
     font-size: 14px;
 }
 
@@ -228,7 +243,7 @@ footer .subtitle {
 }
 
 .play i {
-    padding: 0 .625rem;
+    padding: 0 .625rem .625rem .625rem;
     font-size: 25px;
 }
 
@@ -238,8 +253,10 @@ footer .subtitle {
 }
 
 .tempo-brano {
+    max-width: 100%;
     display: inline-block;
     padding-bottom: .3125rem;
+    flex-grow: 1;
 }
 
 .tempo-brano input {
@@ -248,15 +265,25 @@ footer .subtitle {
 }
 
 .icon-3 i {
-    padding-right: .3125rem;
-    font-size: .875rem;
+    padding-right: .125rem
 }
 
 .barra-volume input {
     height: 2px;
     display: flex;
     align-self: center;
-    max-width: 6.25rem;
+    max-width: 50px;
 }
 
+.container-box {
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.box{
+    font-size: 12px;
+}
+.box2{
+    flex-grow: 0.5;
+}
 /*menù basso*/

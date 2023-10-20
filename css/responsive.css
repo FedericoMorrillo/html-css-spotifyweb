@@ -2,6 +2,7 @@
 .xs-major {
     display: none;
 }
+/*md*/
 
 /*sm*/
 @media screen and (min-width: 576px) {
@@ -44,7 +45,43 @@
     .xs-major {
         display: inline-block;
     }
+    .box{
+        font-size: 20px !important;
+    }
+  .box .icon-1{
+    padding-left: 10px;
+  }
 }
-
-/*tablet*/
+@media screen and (min-width:768px) { 
+    .album-box {
+        width: calc(100% / 4 - 20px) !important;
+        margin: 0 10px 5px 10px;
+    }
+    .music-nav{
+        font-size: 1rem;
+    }
+    footer{
+        padding: 10px;
+    }
+    .barra-volume input{
+        max-width: 120px !important;
+    }
+    .icon-1{
+        display: flex;
+    }
+    .icon-1 i{
+        padding: 1.25rem .3125rem 0 .3125rem;
+        font-size: 1.5625rem;
+    }
+}
+@media screen and (min-width: 992px ) {
+    .album-box {
+        width: calc(100% / 6 - 20px) !important;
+        margin: 0 10px 5px 10px;
+    }
+    .box{
+        font-size: 1.75rem !important;
+    }
+    
+}
 /*responsive*/

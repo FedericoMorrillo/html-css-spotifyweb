@@ -23,7 +23,7 @@
 <body>
         <!--menù laterale-->
         <div class="main-window flex">
-            <div class="nav flex">
+            <div class="nav y-center flex">
                 <!--menù alto-->
                 <!--logo-->
                 <div class=" logo">
@@ -34,7 +34,7 @@
                 <!--menù-->
                 <div class=" menu">
                     <div class="home select">
-                        <button class="  no-hover nav-icon flex">
+                        <button class="on-click  no-hover nav-icon y-center flex">
                             <img src="img/home.svg" alt="home">
                             <div class="info xs-major">
                                 Home
@@ -42,7 +42,7 @@
                         </button>
                     </div>
                     <div class="seach ">
-                        <button class="nav-icon no-hover flex">
+                        <button class="on-click nav-icon no-hover y-center flex">
                             <img src="img/search.svg" alt="seach">
                             <div class="info xs-major">
                                 Seach
@@ -50,63 +50,48 @@
                         </button>
                     </div>
                     <div class="library">
-                        <div class="nav-icon no-hover flex">
+                        <button class="on-click nav-icon no-hover y-center t-correction flex">
                             <img src="img/libreria.svg" alt="librery">
                             <div class="info xs-major">
                                 La tua libreria
                             </div>
-                        </div>
+                        </button>
                     </div>
                     <div class="xs-major playlist">
                         <div>
                             <h4>PLAYLIST</h4>
                         </div>
                         <div>
-                            <div class="flex space-bottom">
-                                <button class="add-playlist ">
+                            <div class="flex y-center space-bottom">
+                                <button class="on-click add-playlist ">
                                     <div>
                                         <i class="fa-solid fa-plus fa-lg" style="color: #000000;"></i>
                                     </div>
                                 </button>
-                                <div>
+                                <button class="on-click subtitle">
                                     Crea Playlist
-                                </div>
+                                </button>
                             </div>
                             <ul class="list">
-                                <li class="space-bottom">
+                                <li class=" subtitle on-click space-bottom">
                                     Nome Playlist
                                 </li>
-                                <li class="space-bottom">
+                                <li class="subtitle on-click space-bottom">
                                     Nome Playlist
                                 </li>
-                                <li class="space-bottom">
+                                <li class="subtitle on-click space-bottom">
                                     Nome Playlist
                                 </li>
-                                <li class="space-bottom">
+                                <li class="subtitle on-click space-bottom">
                                     Nome Playlist
                                 </li>
-                                <li class="space-bottom">
+                                <li class="subtitle on-click space-bottom">
                                     Nome Playlist
                                 </li>
-                                <li class="space-bottom">
+                                <li class="subtitle on-click space-bottom">
                                     Nome Playlist
                                 </li>
-                                <li class="space-bottom">
-                                    Nome Playlist
-                                </li>
-                                <li class="space-bottom">
-                                    Nome Playlist
-                                </li>
-                                <li class="space-bottom">
-                                    Nome Playlist
-                                </li>
-                                <li class="space-bottom">
-                                    Nome Playlist
-                                </li>
-                                <li class="space-bottom">
-                                    Nome Playlist
-                                </li>
-                                <li class="space-bottom">
+                                <li class="subtitle on-click space-bottom">
                                     Nome Playlist
                                 </li>
                             </ul>
@@ -119,16 +104,16 @@
                 <div class=" profile">
                     <!--tasto download-->
                     <div class=" download space-bottom no-hover flex">
-                        <div class="download-icon">
+                        <button class="download-icon on-click">
                             <img src="img/download.svg" alt="download">
-                        </div>
-                        <div class="info-profile xs-major">
+                        </button>
+                        <button class=" on-click subtitle info-profile xs-major">
                             installa app
-                        </div>
+                        </button>
                     </div>
                     <!--/tasto download-->
                     <!--profilo-->
-                    <div class=" user flex">
+                    <div class=" user flex y-center">
                         <div class="nav-icon">
                             <img src="img/profile.svg" alt="profile">
                         </div>
@@ -144,29 +129,32 @@
             <main>
                 <!--menù superiore-->
                 <div class="up-bar flex">
-                    <button>
+                    <button class="hover-grow">
                         EFFETTUA L'UPGRADE
                     </button>
                 </div>
                 <!--/menù superiore-->
                 <!--menu selezione musica-->
-                <div class="music-nav"> 
-                    <ul class="music-nav flex wrap">
-                        <li class="select-b">
-                            IN EVIDENZA   
+                <div class="music-nav no-hover"> 
+                    <ul class="music-nav t-correction flex wrap">
+                        <li>
+                            <button class="on-click subtitle">IN EVIDENZA</button>
+                            <hr>   
                         </li>
                         <li>
-                            PODCAST
+                            <button class="subtitle on-click">PODCAST</button> 
                         </li>
                         <li>
-                            CLASSIFICHE
+                            <button class="subtitle on-click">CLASSIFICHE</button>
                         </li>
                         <li>
-                            GENERI E MOOD
+                            <button class="subtitle on-click">GENERI E MOOD</button>
                         </li>
-                        <li>NUOVE USCITE</li>
                         <li>
-                            SCOPRI
+                            <button class="subtitle on-click">NUOVE USCITE</button>
+                        </li>
+                        <li>
+                            <button class="subtitle on-click">SCOPRI</button>
                         </li>
                     </ul>
                 </div>
@@ -258,44 +246,54 @@
             </main>
         </div>
     <!--menù inferiore-->
-     <footer class="flex">
-
-        <div class="box flex">
-            <div>
-                <img src="img/sinister.jpeg" alt="sinister">
-            </div>
-            <div class="info-brano">
-                <h5>Sinister</h5>
-                <div class="subtitle">Brano</div>
-                <div class="subtitle">Nome</div>
-            </div>
-            <div class="icon-1">
+     <footer>
+        <div class="container-box flex y-center">
+            <div class="box box1 flex">
                 <div>
-                    <i class="fa-regular fa-heart fa-xs" style="color: #828282;"></i>
+                    <img src="img/sinister.jpeg" alt="sinister">
                 </div>
-                <div>
-                    <i class="fa-regular fa-folder fa-xs" style="color: #828282;"></i>
+                <div class="info-brano">
+                    <h6>Sinister</h> 
+                        <div class="subtitle">
+                            Brano Nome
+                        </div>    
+                </div>
+                <div class="icon-1">
+                    <div>
+                        <i class="fa-regular fa-heart fa-xs" style="color: #828282;"></i>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-folder fa-xs" style="color: #828282;"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="box">
-            <div class="icon-2">
-                <i class="fa-solid fa-shuffle fa-xs" style="color: #ffffff;"></i>
-                <i class="fa-solid fa-backward fa-xs" style="color: #ffffff;"></i>
-                <span class="play"><i class="fa-regular fa-circle-play fa-lg" style="color: #ffffff;"></i></span>
-                <i class="fa-solid fa-forward fa-xs" style="color: #ffffff;"></i>
-                <i class="fa-solid fa-arrow-rotate-right fa-xs" style="color: #ffffff;"></i>
+            <div class="box box2">
+                <div class="icon-2 t-center">
+                    <i class="fa-solid fa-shuffle fa-2xs" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-backward fa-2xs" style="color: #ffffff;"></i>
+                    <span class="play"><i class="fa-regular fa-circle-play fa-lg" style="color: #ffffff;"></i></span>
+                    <i class="fa-solid fa-forward fa-2xs" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-arrow-rotate-right fa-2xs" style="color: #ffffff;"></i>
+                </div>
+                <div class="font-small flex">
+                    <div>0:25 </div>
+                    <div class="tempo-brano">
+                        <input type="range">
+                    </div>
+                    <div>
+                        4:35
+                    </div>
+                </div>
             </div>
-            <div class="font-small">0:25 <span class="tempo-brano"><input type="range"></span>4:35</div>
-        </div>
-        <div class="box flex">
-            <div class="icon-3">
-                <i class="fa-solid fa-list fa-xs" style="color: #ffffff;"></i>
-                <i class="fa-solid fa-desktop fa-xs" style="color: #ffffff;"></i>
-                <i class="fa-solid fa-volume-high fa-xs" style="color: #ffffff;"></i>
+            <div class="box box3 flex y-center">
+                <div class="icon-3">
+                    <i class="fa-solid fa-list fa-2xs" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-desktop fa-2xs" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-volume-high fa-2xs" style="color: #ffffff;"></i>
+                </div>
+                <div class="barra-volume"><input type="range"></div>
             </div>
-            <div class="barra-volume"><input type="range"></div>
-        </div>
+        </div>    
     </footer>
     <!--/menù inferiore-->
 </body>

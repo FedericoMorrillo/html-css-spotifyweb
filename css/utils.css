@@ -3,9 +3,11 @@
     font-size: 10px;
     padding-top: 5px;
 }
-.flex{
-    display: flex;
+.y-center{
     align-items: center;
+}
+.flex{
+    display: flex; 
 }
 .wrap{
     flex-wrap: wrap;
@@ -32,7 +34,15 @@ button{
 .giu{
     margin-top: auto;
     }
-    .flex{
+    .grow{
         flex-grow: 1;
+    }
+    .t-correction{
+        white-space: nowrap;
+    }
+    .on-click:hover{
+        color: white;
+        cursor: pointer;
+
     }
 /*common*/
