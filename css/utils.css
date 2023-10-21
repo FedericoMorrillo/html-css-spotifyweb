@@ -41,7 +41,7 @@ button{
         white-space: nowrap;
     }
     .on-click:hover{
-        color: white;
+        color: white !important; 
         cursor: pointer;
 
     }
