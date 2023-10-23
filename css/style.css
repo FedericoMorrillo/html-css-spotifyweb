@@ -84,7 +84,9 @@ padding: 50px 55px 55px 60px;
     width: 100%;
     display: block;
 }
-
+.cerchio{
+border-radius: 100%;
+}
 .title {
     text-align: center;
     padding: 10px;
